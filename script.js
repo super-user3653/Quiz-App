@@ -3,13 +3,9 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
-
 const qeustnum = 4;
-
-var curnem;
-
-var scorenum;
-
+let curnem;
+let scorenum;
 let shuffledQuestions, currentQuestionIndex
 
 startButton.addEventListener('click', startGame)
@@ -18,9 +14,6 @@ nextButton.addEventListener('click', () => {
   setNextQuestion()
   
 })
-
-
-
 
 function startGame() {
   startButton.classList.add('hide')
@@ -99,35 +92,35 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is 2 + 2?',
+    question: 'What is 4 + 9?',
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
+      { text: '94', correct: false },
+      { text: '49', correct: false },
+      { text: 'None Of The Above', correct: true }
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: 'Who is the best Teacher',
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: 'Muhammad Ali Mughal', correct: true },
+      { text: 'Sir Basit', correct: true },
+      { text: 'Sir Ghous Ahmed', correct: true },
+
     ]
   },
   {
-    question: 'Is web development fun?',
+    question: 'Should You Go Out In This Global Pandemic',
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
+      { text: 'Yes', correct: false },
+      { text: 'No', correct: false },
+      { text: 'Yes With Precaution', correct: true }
     ]
   },
   {
-    question: 'What is 4 * 2?',
+    question: 'What is 4 * 8?',
     answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
+      { text: '84', correct: false },
+      { text: '32', correct: true }
     ]
   }
 ]
